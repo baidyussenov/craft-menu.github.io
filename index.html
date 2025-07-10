@@ -61,18 +61,16 @@
 
   <model-viewer
     id="cakeViewer"
-    src="./models/handpainted_watercolor_cake.usdz"
+    src="./models/handpainted_watercolor_cake.glb"
+    ios-src="./models/handpainted_watercolor_cake.usdz"
     ar
-    ar-modes="webxr scene-viewer quick-look"
+    ar-modes="scene-viewer webxr quick-look"
     camera-controls
     auto-rotate
     shadow-intensity="1"
     tone-mapping="neutral"
     alt="3D модель торта"
     style="position: relative;">
-
-    <!-- Встроенная AR-кнопка (необязательно, можно скрыть) -->
-    <button slot="ar-button" style="display:none">Открыть AR</button>
 
     <!-- Подсказка -->
     <div id="ar-prompt" slot="ar-prompt">
@@ -81,7 +79,7 @@
 
   </model-viewer>
 
-  <!-- Твоя отдельная кнопка -->
+  <!-- Кнопка запуска AR -->
   <button id="custom-ar-button">Смотреть в реальности</button>
 
   <script>
